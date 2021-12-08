@@ -1,0 +1,130 @@
+/*HTML, BODY styling starts*/
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.6rem;
+  min-width: 230px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  min-width: 343px;
+}
+/*HTML, BODY styling ends*/
+
+/*Book Styling  Container and Content starts*/
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px 20px;
+}
+
+.book-list {
+  background-color: #dfe6e9;
+  padding: 3em;
+}
+
+.book-list .card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 1em;
+  box-shadow: 0px 10px 5px #b2bec3;
+  text-align: center;
+}
+
+.card .title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.card .description {
+  font-size: 16px;
+}
+
+.card img {
+  border-radius: 10px;
+}
+
+.info-button {
+  background-color: #f9ca24;
+  border: none;
+  padding: 1em;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.info-button:hover {
+  box-shadow: 0px 5px 5px #b2bec3;
+  color: #eb4d4b;
+  cursor: pointer;
+}
+/*Book Styling  Container and Content ends*/
+
+/* Navigation Bar  Starts*/
+nav {
+  background: #222;
+  padding: 0.7rem;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding-left: 0;
+  text-align: center;
+}
+
+nav li {
+  margin: 1rem 0;
+}
+
+nav a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: dodgerblue;
+}
+/* Navigation Bar  Ends*/
+
+/* Media Query for NAVBAR  Starts */
+@media screen and (min-width: 768px) {
+  nav ul {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  nav li {
+    margin: 0 4rem;
+  }
+}
+/* Media Query for NAVBAR Ends */
+
+/*Media Query for Grid Container for Books Start*/
+@media screen and (max-width: 868px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px 20px;
+  }
+}
+
+@media screen and (max-width: 587px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 20px;
+  }
+}
+/*Media Query for Grid Container for Books End*/

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/deleteBook.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="header-head">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <h3 class="logo">Logo</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h4 class="authors">ADD NEW BOOKS</h4>
+          <a href="deleteBook.html">
+            <button class="btn-class">
+              <span class="icon"><img src="images/BACK.svg" /></span>BACK
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4"></div>
+
+        <div class="col-lg-4">
+          <div class="card-form">
+
+            <form action="" id="form">
+              <label class="label-stye">Book Title</label> <br />
+              <input type="text" name="Title" class="in-1" id="title" />
+
+              <label class="label-stye">Author</label> <br />
+              <input type="text" name="Author" class="in-1" id="author" />
+
+              <label class="label-stye">Date</label><br />
+              <input type="date" id="date" class="in-1"/>
+              
+              <label class="label-stye">Description</label> <br />
+              <textarea class="in-1" id="description" style="resize: none;" id="author-books" rows="4" cols="50"></textarea>
+
+              <label class="label-stye">Pages</label> <br />
+              <input type="number" id="page" class="in-1" id="author-address" />
+
+                <label class="label-stye">Genre</label> <br />
+              <input type="text" id="genre" class="in-1" id="author-address" />
+
+               <label class="label-stye">Publisher</label> <br />
+              <input type="text" id="publisher" class="in-1" id="author-address" />
+
+              <button class="btn-class-2" type="submit">
+                <span class="icon"><img src="images/add.svg" /></span>ADD
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <div class="col-lg-4"></div>
+      </div>
+    </div>
+
+    <script src="post.js"></script>
+  </body>
+</html>
